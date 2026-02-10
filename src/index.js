@@ -3,11 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { Navbar } from './Shared/Navbar';
+import { BrowserRouter } from 'react-router-dom/cjs/react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Navbar />
+    </BrowserRouter>
+    {/* <App /> */}
   </React.StrictMode>
 );
 
